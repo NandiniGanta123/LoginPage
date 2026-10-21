@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Instagram</h1>
+
+        <div class="buttons">
+          <button class="tab active" data-tab="login" onclick="showForm('login')">Login</button>
+          <button class="tab" data-tab="register" onclick="showForm('register')">Register</button>
+          <button class="tab" data-tab="forgot" onclick="showForm('forgot')">Forgot</button>
+        </div>
+
+        <div id="loginFormBox" class="form-box active">
+          <form id="loginForm">
+            <label>Roll Number</label>
+            <input type="text" id="loginRoll" placeholder="Enter roll number" />
+
+            <label>Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter password" />
+
+            <button type="submit">Login</button>
+          </form>
+        </div>
+
+        <div id="registerFormBox" class="form-box">
+          <form id="registerForm">
+            <label>Roll Number</label>
+            <input type="text" id="registerRoll" placeholder="Create roll number" />
+
+            <label>Password</label>
+            <input type="password" id="registerPassword" placeholder="Create password" />
+
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password" />
+
+            <button type="submit">Register</button>
+          </form>
+        </div>
+
+        <div id="forgotFormBox" class="form-box">
+          <form id="forgotForm">
+            <label>Roll Number</label>
+            <input type="text" id="forgotRoll" placeholder="Enter roll number" />
+
+            <label>New Password</label>
+            <input type="password" id="forgotPassword" placeholder="Enter new password" />
+
+            <label>Confirm New Password</label>
+            <input type="password" id="forgotConfirmPassword" placeholder="Confirm new password" />
+
+            <button type="submit">Reset Password</button>
+          </form>
+        </div>
+
+    
+      </div>
+              <p id="message"></p>
+
+    </div>
+
+    <script src="nandu.js"></script>
+  </body>
+</html>
